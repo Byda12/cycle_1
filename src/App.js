@@ -11,8 +11,6 @@ import AuthProvider from "./context/AuthProvider";
 import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 function App() {
   return (
-
-    // Cooment out of Home page linked
     <div className='App'>
       <AuthProvider>
         <Router>
@@ -22,7 +20,6 @@ function App() {
             <Route path='/home' element={<Home />} />
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<PrivateRoute><Register /></PrivateRoute>} />
-         
             <Route path='*' element={<NotFound />} />
           </Routes>
           <Footer></Footer>
@@ -31,6 +28,7 @@ function App() {
     </div>
   );
 }
+
 export default App;
 
 

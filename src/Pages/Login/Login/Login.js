@@ -14,7 +14,7 @@ const Login = () => {
       <button onClick={signInWithGoogle} type='button' className='btn btn-info'>
         Sign In With Google
       </button>
-      {user?.email && <Alert variant='success'>{user.email}</Alert>}
+      {user?.email && <Alert variant='success'>{user.displayName}</Alert>}
       <p className='text-danger fw-bolder'>{authError}</p>
     </div>
   );
