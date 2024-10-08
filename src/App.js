@@ -11,6 +11,8 @@ import AuthProvider from "./context/AuthProvider";
 import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 function App() {
   return (
+
+    // Cooment out of Home page linked
     <div className='App'>
       <AuthProvider>
         <Router>
